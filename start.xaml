@@ -1,0 +1,29 @@
+﻿<Window x:Class="game.start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:game"
+        mc:Ignorable="d"
+        Title="start" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3F3A41" Offset="0.094"/>
+                <GradientStop Color="#FFD59AED" Offset="0.657"/>
+                <GradientStop Color="#FFA97ABC" Offset="0.435"/>
+                <GradientStop Color="#FF8C659C" Offset="0.366"/>
+                <GradientStop Color="#FF5D4368" Offset="0.246"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Math Madness" HorizontalAlignment="Left" Margin="152,54,0,0" VerticalAlignment="Top" FontSize="36" Height="46" Width="448" FontFamily="Wide Latin"/>
+        <Label Content="Answer:" HorizontalAlignment="Left" Margin="210,0,0,0" VerticalAlignment="Center" FontSize="20" Height="34" Width="123" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="userAnswer" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="108" Height="34" FontSize="20" Background="#FFECD9F3" Margin="376,0,0,0"/>
+        <Label x:Name="Question" Content="Question:" HorizontalAlignment="Left" Margin="210,124,0,0" VerticalAlignment="Top" Height="41" Width="332" FontSize="20"/>
+        <Button Content="Check Me!" HorizontalAlignment="Left" Margin="524,0,0,0" VerticalAlignment="Center" Height="49" Width="76" Click="check"/>
+        <Button Content="Quit" HorizontalAlignment="Left" Margin="33,349,0,0" VerticalAlignment="Top" Height="42" Width="83" RenderTransformOrigin="0.599,0.144" Click="quit"/>
+        <Label  x:Name="scores"  Content="Score:" HorizontalAlignment="Left" Margin="580,17,0,0" VerticalAlignment="Top" Height="43" Width="113" FontFamily="Wide Latin" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Label  x:Name="uName"  Content="" HorizontalAlignment="Left" Margin="33,10,0,0" VerticalAlignment="Top" Height="39" Width="152" FontSize="24"/>
+
+    </Grid>
+</Window>
